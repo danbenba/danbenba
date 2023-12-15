@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=danbenba&label=Profile%20views&color=0e75b6&style=flat" alt="danbenba" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username =danbenba" alt="danbenba" />≪/a> </p>
+<p align="left"> <a href="https://github.com/danbenba/danbenba"><img src="https://github-profile-trophy.vercel.app/?username =danbenba" alt="danbenba" /></p>
 
 <p align="left"> <a href="https://twitter.com/danbenba_dev" target="blank"><img src="https://img.shields.io/twitter/follow/danbenba_dev?logo=twitter&style=for-the-badge" alt="danbenba_dev" />≪/a> </p>
 

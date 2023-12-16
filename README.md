@@ -5,7 +5,6 @@
 
 <p align="left"> <a href="https://twitter.com/danbenba_dev" target="blank"><img src="https://img.shields.io/twitter/follow/danbenba_dev?logo=twitter&style=for-the-badge" alt="danbenba_dev" /></a> </p>
 
-<br><br>
 
 - 🔭 Je travaille actuellement sur [FortniteDownloader](https://github.com/danbenba/fortnitedownloader)
 
@@ -27,7 +26,6 @@
 
 - ⚡ Fun fact **Je pence que j'ai beacoup d'hunour, Je suis très poli**
   
-<br><br>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

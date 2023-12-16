@@ -40,7 +40,10 @@
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/https://www.buymeacoffee.com/danbenba"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/danbenba" /></a></p><br><br>
 
-<td><img src="https://github-readme-stats.vercel.app/api/top-langs?username=danbenba&show_icons=true&locale=en&layout=compact" alt="danbenba" /></td>
+<table>
+  <tr>
+    <td><img src="https://github-readme-stats.vercel.app/api/top-langs?username=danbenba&show_icons=true&locale=en&layout=compact" alt="danbenba" /></td>
     <td><img src="https://github-readme-stats.vercel.app/api?username=danbenba&show_icons=true&locale=en" alt="danbenba" /></td>
     <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=danbenba&" alt="danbenba" /></td>
   </tr>
+</table>

@@ -1,7 +1,7 @@
 <h1 align="center">Salut 👋, Je me prenome, je suis Dany, mais on me connaît sous le surnom de danbenba.</h1>
 <h3 align="center">J'ai deux ans d'expérience en tant que développeur, et je suis ravi de partager mes projets avec vous. Je maîtrise plusieurs langages, notamment Java, Python, C#, et bien d'autres.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=danbenba&label=Profile%20views&color=0e75b6&style=flat" alt="danbenba" /> </p>
+
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=danbenba" alt="danbenba" /></a> </p>
 

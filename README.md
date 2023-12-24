@@ -1,5 +1,5 @@
 <h1 align="center">Salut 👋, Je me prenome, je suis Dany, mais on me connaît sous le surnom de danbenba.</h1>
-<h3 align="center">J'ai deux ans d'expérience en tant que développeur, et je suis ravi de partager mes projets avec vous. Je maîtrise plusieurs langages, notamment Java, Python, C#, et bien d'autres.</h3>
+<h3 align="center">Je suis dans le domaine du développement depuis plus de deux ans, et je suis ravi de partager mes projets avec vous. Mes compétences s'étendent à plusieurs langages de programmation, tels que Java, Python, et C#, mais s'étendent également à la conception de visuels attrayants et à la création d'interfaces utilisateur intuitives. Je suis passionné par la création de logiciels utiles et l'apprentissage de nouvelles techniques pour améliorer mes compétences. Je cherche toujours à évoluer et à apporter des solutions créatives aux problèmes, tout en restant connecté aux tendances actuelles en technologie et développement.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=danbenba&label=Profile%20views&color=0e75b6&style=flat" alt="danbenba" /> </p>
 

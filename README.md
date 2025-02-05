@@ -8,7 +8,7 @@
 
 - 🔭 Je travaille actuellement sur [FortniteDownloader](https://github.com/danbenba/fortnitedownloader)
 
-- 🌱 J'apprends actuellement **Le binaire...**
+- 🌱 J'apprends actuellement **Le language C#**
 
 - 👯 Je cherche à collaborer sur [PalaSolo](https://github.com/palasolo/palasolo/)
 

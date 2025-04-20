@@ -10,7 +10,7 @@
 
 - 🌱 J'apprends actuellement **Le language C#**
 
-- 👯 Je cherche à collaborer sur [PalaSolo](https://github.com/palasolo/palasolo/)
+- 👯 Je cherche à collaborer sur [Cfinder](https://cfinder.xyz)
 
 - 🥇 Mon premier projet est [PassGen](https://github.com/danbenba/passgen)
 

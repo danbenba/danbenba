@@ -50,9 +50,8 @@ Passionné par le développement depuis plus de deux ans, je conçois des logici
 
 <table>
   <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs?username=danbenba&show_icons=true&locale=en&layout=compact" alt="danbenba" /></td>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=danbenba&show_icons=true&locale=en" alt="danbenba" /></td>
-    <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=danbenba&" alt="danbenba" /></td>
+    <td><img src="https://github-readme-stats.vercel.app/api/top-langs?username=danbenba&show_icons=true&locale=en&layout=compact&theme=transparent" alt="danbenba" /></td>
+    <td><img src="https://github-readme-stats.vercel.app/api?username=danbenba&show_icons=true&locale=en&theme=transparent" alt="danbenba" /></td>
   </tr>
 </table>
 

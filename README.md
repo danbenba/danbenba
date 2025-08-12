@@ -8,7 +8,7 @@
 
 ## 🖥️ À propos de moi
 
-Passionné par le développement depuis plus de deux ans, je conçois des logiciels performants et des interfaces utilisateur intuitives. Mes domaines d’expertise incluent le back-end, le front-end ainsi que la création de visuels attractifs. Toujours avide d’apprentissage, je m’efforce d’intégrer les dernières technologies pour proposer des solutions innovantes.
+Passionné par le développement depuis plus de quatre ans, je conçois des logiciels performants et des interfaces utilisateur intuitives. Mes domaines d’expertise incluent le back-end, le front-end ainsi que la création de visuels attractifs. Toujours avide d’apprentissage, je m’efforce d’intégrer les dernières technologies pour proposer des solutions innovantes.
 
 ---
 

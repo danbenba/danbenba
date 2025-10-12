@@ -14,7 +14,7 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
 
 ## 🚀 Projets récents
 
-* 🔭 **UnlockShy** ([unlockshy.xyz](https://unlockshy.xyz)) : Plateforme sécurisée de partage de contenus.
+* 🔭 **Frame Flow** ([frame-flow.fr](https://frame-flow.fr)) : Plateforme de vente de formations.
 * 👯 **Squiduuverse** ([squiduuverse.com](https://squiduuverse.com)) : Univers collaboratif immersif.
 
 ---
@@ -29,8 +29,8 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
 
 ## 📫 Me contacter
 
-* ✉️ Email : [danbenba@unlockshy.xyz](mailto:danbenba@unlockshy.xyz)
-* 🌐 Site Web : [danbenba.unlockshy.xyz](https://danbenba.unlockshy.xyz)
+* ✉️ Email : [contact@danbenba.dev](mailto:contact@danbenba.dev)
+* 🌐 Site Web : [danbenba.unlockshy.xyz](https://danbenba.dev)
 * 🐦 Twitter : [@danbenba\_dev](https://twitter.com/danbenba_dev)
 
 ---

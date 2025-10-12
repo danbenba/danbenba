@@ -30,7 +30,7 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
 ## 📫 Me contacter
 
 * ✉️ Email : [contact@danbenba.dev](mailto:contact@danbenba.dev)
-* 🌐 Site Web : [danbenba.unlockshy.xyz](https://danbenba.dev)
+* 🌐 Site Web : [danbenba.dev](https://danbenba.dev)
 * 🐦 Twitter : [@danbenba\_dev](https://twitter.com/danbenba_dev)
 
 ---

@@ -20,9 +20,9 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
 
 ## 🛠️ Compétences techniques
 
-**Langages :** Java · Python · C# · JavaScript · PHP · C/C++<br>
-**Frameworks & Outils :** Node.js · Android · Qt · Unity · Unreal Engine · Git · Linux · SQLite · Oracle<br>
-**Design & UI :** Adobe Illustrator · Photoshop · Adobe XD · Blender<br>
+**Langages :** Java · Python · C# · JavaScript · PHP · C/C++ · React · Typescript<br>
+**Frameworks & Outils :** Node.js · Android · Qt · Unity · Unreal Engine · Git · Linux · SQLite · Oracle · Next.js · Vite · HeroUI · Shadcn · Prisma<br>
+**Design & UI :** Adobe Illustrator · Photoshop · Figma · Blender<br>
 
 ---
 

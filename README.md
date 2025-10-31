@@ -14,8 +14,7 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
 
 ## 🚀 Projets récents
 
-* 🔭 **Frame Flow** ([frame-flow.fr](https://frame-flow.fr)) : Plateforme de vente de formations.
-* 👯 **Squiduuverse** ([squiduuverse.com](https://squiduuverse.com)) : Univers collaboratif immersif.
+* 🔭 **creatorspace** ([creatorspace.fr](https://creatorspace.fr)).
 
 ---
 
@@ -31,7 +30,7 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
 
 * ✉️ Email : [contact@danbenba.dev](mailto:contact@danbenba.dev)
 * 🌐 Site Web : [danbenba.dev](https://danbenba.dev)
-* 🐦 Twitter : [@danbenba\_dev](https://twitter.com/danbenba_dev)
+* 🐦 Twitter : [@danbenba\_dev](https://twitter.com/danbenba)
 
 ---
 

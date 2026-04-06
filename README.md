@@ -14,7 +14,7 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
 
 ## 🚀 Projets récents
 
-* 🔭 **creatorspace** ([creatorspace.fr](https://creatorspace.fr)).
+* 🔭 **FakturApp** ([fakturapp.cc](https://fakturapp.cc)).
 
 ---
 
@@ -42,17 +42,6 @@ Passionné par le développement depuis plus de quatre ans, je conçois des logi
   <a href="https://www.youtube.com/c/danbenba" target="_blank">YouTube</a> &nbsp;·&nbsp;  
   <a href="https://www.hackerearth.com/@danbenba" target="_blank">HackerEarth</a>
 </p>
-
----
-
-## 📊 Statistiques GitHub
-
-<table>
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs?username=danbenba&show_icons=true&locale=en&layout=compact&theme=transparent" alt="danbenba" /></td>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=danbenba&show_icons=true&locale=en&theme=transparent" alt="danbenba" /></td>
-  </tr>
-</table>
 
 ---
 

@@ -9,11 +9,11 @@
 </a>
 
 <p>
-  <a href="https://danbenba.dev"><img src="https://img.shields.io/badge/danbenba.dev-0d1117?style=for-the-badge&logo=googlechrome&logoColor=4C8DFF" alt="Website" /></a>
-  <a href="mailto:contact@danbenba.dev"><img src="https://img.shields.io/badge/contact-0d1117?style=for-the-badge&logo=maildotru&logoColor=4C8DFF" alt="Email" /></a>
-  <a href="https://x.com/danbenba"><img src="https://img.shields.io/badge/@danbenba-0d1117?style=for-the-badge&logo=x&logoColor=4C8DFF" alt="X" /></a>
-  <a href="https://instagram.com/danbenba"><img src="https://img.shields.io/badge/instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=4C8DFF" alt="Instagram" /></a>
-  <a href="https://discord.com/users/963096349937651772"><img src="https://img.shields.io/badge/discord-0d1117?style=for-the-badge&logo=discord&logoColor=4C8DFF" alt="Discord" /></a>
+  <a href="https://danbenba.dev"><img src="https://img.shields.io/badge/danbenba.dev-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+  <a href="mailto:contact@danbenba.dev"><img src="https://img.shields.io/badge/contact-0d1117?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email" /></a>
+  <a href="https://x.com/danbenba"><img src="https://img.shields.io/badge/@danbenba-0d1117?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://instagram.com/danbenba"><img src="https://img.shields.io/badge/instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <a href="https://discord.com/users/963096349937651772"><img src="https://img.shields.io/badge/discord-0d1117?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 </p>
 
 <table align="center">
@@ -69,44 +69,44 @@
 <table align="center">
   <tr>
     <td align="center" width="420" valign="top">
-      <img src="assets/icons/send.svg" width="34" /><br>
+      <img src="assets/projects/dokploy-mcp.svg" width="34" /><br>
       <a href="https://github.com/danbenba/dokploy-mcp"><b>Dokploy MCP</b></a><br><br>
       Open-source MCP server for <b>Dokploy</b>:<br>let Claude, ChatGPT or any MCP client<br>run your self-hosted panel. Hosted at <a href="https://dokploy.rest">dokploy.rest</a><br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=anthropic&logoColor=4C8DFF" />
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=anthropic&logoColor=white" />
     </td>
     <td align="center" width="420" valign="top">
-      <img src="assets/icons/paper.svg" width="34" /><br>
+      <img src="assets/projects/framerexport.svg" width="34" /><br>
       <a href="https://github.com/danbenba/FramerExport"><b>FramerExport</b></a><br><br>
       Export your <b>Framer</b> website to native HTML,<br>ready to host anywhere you like.<br>My most-starred repo.<br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/github/stars/danbenba/FramerExport?style=flat-square&color=4C8DFF&labelColor=0d1117&label=%E2%98%85" />
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/github/stars/danbenba/FramerExport?style=flat-square&color=4C8DFF&labelColor=0d1117&label=%E2%98%85" />
     </td>
   </tr>
   <tr>
     <td align="center" width="420" valign="top">
-      <img src="assets/icons/category.svg" width="34" /><br>
+      <img src="assets/projects/skillforge.svg" width="34" /><br>
       <a href="https://github.com/danbenba/skillforge"><b>SkillForge</b></a><br><br>
       A <b>package manager for Claude Agent Skills</b>.<br>Remote connector on claude.ai, local MCP server<br>and CLI for Claude Code.<br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Claude-0d1117?style=flat-square&logo=claude&logoColor=4C8DFF" />
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Claude-0d1117?style=flat-square&logo=claude&logoColor=white" />
     </td>
     <td align="center" width="420" valign="top">
-      <img src="assets/icons/wallet.svg" width="34" /><br>
+      <img src="assets/projects/faktur.svg" width="34" /><br>
       <a href="https://fakturapp.cc"><b>Faktur</b></a><br><br>
       A complete <b>invoicing</b> platform:<br>dashboard, API, docs, developer platform,<br>desktop and mobile apps. <a href="https://github.com/fakturapp">@fakturapp</a><br><br>
-      <img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=4C8DFF" />
+      <img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=white" />
     </td>
   </tr>
   <tr>
     <td align="center" width="420" valign="top">
-      <img src="assets/icons/document.svg" width="34" /><br>
+      <img src="assets/projects/gptexporter.png" width="34" /><br>
       <a href="https://github.com/danbenba/GPTExporter"><b>GPT Exporter</b></a><br><br>
       Chrome extension that exports your chats from<br><b>ChatGPT, Claude, Grok, Gemini, Perplexity</b><br>to Markdown, HTML, JSON, TXT or PDF.<br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Chrome_MV3-0d1117?style=flat-square&logo=googlechrome&logoColor=4C8DFF" />
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Chrome_MV3-0d1117?style=flat-square&logo=googlechrome&logoColor=white" />
     </td>
     <td align="center" width="420" valign="top">
-      <img src="assets/icons/shield-done.svg" width="34" /><br>
+      <img src="assets/projects/omnitools.png" width="34" /><br>
       <a href="https://github.com/danbenba/OmniTools"><b>OmniTools</b></a><br><br>
       Where it all started: a suite of <b>Windows utilities</b><br>(debloater, tweaks, drivers, Office installer…)<br>to run all kinds of scripts in one click.<br><br>
-      <img src="https://img.shields.io/badge/C%23-0d1117?style=flat-square&logo=dotnet&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=4C8DFF" />
+      <img src="https://img.shields.io/badge/C%23-0d1117?style=flat-square&logo=dotnet&logoColor=white" /> <img src="https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=white" />
     </td>
   </tr>
 </table>
@@ -144,7 +144,7 @@
   Drop me a line at <a href="mailto:contact@danbenba.dev"><b>contact@danbenba.dev</b></a> or visit <a href="https://danbenba.dev"><b>danbenba.dev</b></a>
 </p>
 
-<a href="https://www.buymeacoffee.com/danbenba"><img src="https://img.shields.io/badge/Buy_me_a_coffee-0d1117?style=for-the-badge&logo=buymeacoffee&logoColor=4C8DFF" alt="Buy me a coffee" /></a>
+<a href="https://www.buymeacoffee.com/danbenba"><img src="https://img.shields.io/badge/Buy_me_a_coffee-0d1117?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Buy me a coffee" /></a>
 
 <br>
 

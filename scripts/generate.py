@@ -43,38 +43,55 @@ def ascii_portrait():
     gray = np.array(white.convert("L"))
     gray = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8)).apply(gray)
     small = cv2.resize(gray, (COLS, ROWS), interpolation=cv2.INTER_AREA)
-    alpha = cv2.resize(np.array(raw)[..., 3], (COLS, ROWS), interpolation=cv2.INTER_AREA)
+    rgba = np.array(raw).astype(np.float32)
+    premul = rgba[..., :3] * (rgba[..., 3:] / 255)
+    color = cv2.resize(premul, (COLS, ROWS), interpolation=cv2.INTER_AREA)
+    alpha = cv2.resize(rgba[..., 3], (COLS, ROWS), interpolation=cv2.INTER_AREA)
 
-    lines = []
-    for y in range(ROWS):
-        row = ""
-        for x in range(COLS):
-            if alpha[y, x] < 40:
-                row += " "
-            else:
-                row += RAMP[min(len(RAMP) - 1, int((255 - small[y, x]) / 256 * len(RAMP)))]
-        lines.append(row.rstrip())
+    def tint(x, y):
+        rgb = color[y, x] / max(alpha[y, x] / 255, 1e-3)
+        px = np.clip(rgb, 0, 255).astype(np.uint8).reshape(1, 1, 3)
+        hh, ss, vv = cv2.cvtColor(px, cv2.COLOR_RGB2HSV)[0, 0].astype(float)
+        vv = 120 + vv / 255 * 135
+        ss = min(255, ss * 1.15)
+        out = cv2.cvtColor(np.array([[[hh, ss, vv]]], dtype=np.uint8), cv2.COLOR_HSV2RGB)[0, 0]
+        q = (out // 12 * 12).astype(int)
+        return "#%02x%02x%02x" % tuple(q)
 
+    floor = RAMP.index("+")
     w = int(COLS * CHAR_W + 40)
     h = int(ROWS * CHAR_H + 60)
     body = []
-    for i, line in enumerate(lines):
+    for y in range(ROWS):
+        runs = []
+        for x in range(COLS):
+            if alpha[y, x] < 40:
+                ch, fill = " ", None
+            else:
+                ch = RAMP[max(floor, min(len(RAMP) - 1, int((255 - small[y, x]) / 256 * len(RAMP))))]
+                fill = tint(x, y)
+            if runs and (runs[-1][1] == fill or ch == " "):
+                runs[-1][0] += ch
+            else:
+                runs.append([ch, fill])
+        line = "".join(r[0] for r in runs).rstrip()
         if not line:
             continue
-        y = 46 + i * CHAR_H
-        delay = 0.25 + i * 0.07
+        spans = "".join(
+            f'<tspan fill="{f}">{escape(t)}</tspan>' if f else escape(t) for t, f in runs
+        ).rstrip()
+        ty = 46 + y * CHAR_H
+        delay = 0.25 + y * 0.07
         body.append(
-            f'<clipPath id="c{i}"><rect x="20" y="{y - CHAR_H}" height="{CHAR_H + 2}" width="0">'
+            f'<clipPath id="c{y}"><rect x="20" y="{ty - CHAR_H}" height="{CHAR_H + 2}" width="0">'
             f'<animate attributeName="width" from="0" to="{w - 40}" begin="{delay:.2f}s" dur="0.45s" fill="freeze"/>'
             f"</rect></clipPath>"
-            f'<text x="20" y="{y:.1f}" clip-path="url(#c{i})" xml:space="preserve">{escape(line)}</text>'
+            f'<text x="20" y="{ty:.1f}" clip-path="url(#c{y})" xml:space="preserve">{spans}</text>'
         )
     svg = (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
         f'<g font-family="{FONT}">{frame(w, h, "dany@danbenba: ~/portrait")}</g>'
-        f'<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">'
-        f'<stop offset="0" stop-color="#d6e4ff"/><stop offset="1" stop-color="{ACCENT}"/></linearGradient></defs>'
-        f'<g font-family="{FONT}" font-size="7.9" fill="url(#g)">{"".join(body)}</g></svg>'
+        f'<g font-family="{FONT}" font-size="7.9" font-weight="700">{"".join(body)}</g></svg>'
     )
     (OUT / "ascii.svg").write_text(svg)
 

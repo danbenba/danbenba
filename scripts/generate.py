@@ -18,9 +18,9 @@ BG = "#0d1117"
 BORDER = "#30363d"
 TEXT = "#c9d1d9"
 MUTED = "#8b949e"
-ACCENT = "#FF7A3D"
+ACCENT = "#4C8DFF"
 RAMP = " .`:-=+*cs#%@"
-HEAT = ["#161b22", "#3b1d0e", "#7a3412", "#c2541c", "#ff7a3d", "#ffb37a"]
+HEAT = ["#161b22", "#0c2d6b", "#1a4fa8", "#2f6fe0", "#4c8dff", "#a5c8ff"]
 
 COLS, ROWS = 76, 40
 CHAR_W, CHAR_H = 4.75, 8.4
@@ -73,7 +73,7 @@ def ascii_portrait():
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
         f'<g font-family="{FONT}">{frame(w, h, "dany@danbenba: ~/portrait")}</g>'
         f'<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">'
-        f'<stop offset="0" stop-color="#ffd1a8"/><stop offset="1" stop-color="{ACCENT}"/></linearGradient></defs>'
+        f'<stop offset="0" stop-color="#d6e4ff"/><stop offset="1" stop-color="{ACCENT}"/></linearGradient></defs>'
         f'<g font-family="{FONT}" font-size="7.9" fill="url(#g)">{"".join(body)}</g></svg>'
     )
     (OUT / "ascii.svg").write_text(svg)
@@ -117,7 +117,7 @@ def heatmap(days, total):
     first = date.fromisoformat(dates[0])
     offset = (first.weekday() + 1) % 7
     weeks = (len(dates) + offset + 6) // 7
-    w = 40 + weeks * (cell + gap) + 10
+    w = 40 + weeks * (cell + gap) - gap + 40
     h = 46 + 7 * (cell + gap) + 32
     rects = []
     for i, d in enumerate(dates):
@@ -144,7 +144,7 @@ def heatmap(days, total):
     labels = "".join(
         f'<text x="12" y="{46 + r * (cell + gap) + 9}">{n}</text>' for r, n in ((1, "Mon"), (3, "Wed"), (5, "Fri"))
     )
-    legend_x = w - 10 - 6 * (cell + gap) - 70
+    legend_x = w - 40 - 6 * (cell + gap) - 64
     legend = f'<text x="{legend_x}" y="{h - 14}">Less</text>' + "".join(
         f'<rect x="{legend_x + 30 + k * (cell + gap)}" y="{h - 23}" width="{cell}" height="{cell}" rx="2.5" fill="{c}"/>'
         for k, c in enumerate(HEAT)
@@ -214,7 +214,7 @@ def info_card(stats, counts, total):
             y += 19
         elif kind == "palette":
             sw = "".join(f'<rect x="{24 + k * 26}" y="{y}" width="22" height="12" rx="3" fill="{c}"/>'
-                         for k, c in enumerate(["#ff5f57", "#febc2e", "#28c840", "#58a6ff", "#bc8cff", ACCENT, "#ffd1a8", TEXT]))
+                         for k, c in enumerate(["#ff5f57", "#febc2e", "#28c840", "#58a6ff", "#bc8cff", ACCENT, "#a5c8ff", TEXT]))
             out.append(f'<g opacity="0">{anim}{sw}</g>')
             y += 18
     cursor_y = y + 8

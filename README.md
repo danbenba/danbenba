@@ -1,125 +1,153 @@
 <div align="center">
 
-<img src="https://danbenba.dev/profile.png" width="128" alt="Dany" />
+<img src="https://danbenba.dev/profile.png" width="140" alt="Dany" />
 
-# Hey, moi c'est Dany
+<h1>Hey, I'm Dany <img src="assets/wave.png" width="38" alt="👋" /></h1>
 
 <a href="https://danbenba.dev">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=FF7A3D&center=true&vCenter=true&width=560&lines=D%C3%A9veloppeur+fullstack+freelance+%F0%9F%87%AB%F0%9F%87%B7;TypeScript+%C2%B7+React+%C2%B7+Node+%C2%B7+Astro;Je+construis+des+serveurs+MCP+pour+les+agents+IA;Des+sites+qui+convertissent%2C+des+SaaS+qui+grandissent" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=4C8DFF&center=true&vCenter=true&width=560&lines=Freelance+fullstack+developer+from+France+%F0%9F%87%AB%F0%9F%87%B7;TypeScript+%C2%B7+React+%C2%B7+Node+%C2%B7+Astro;Building+MCP+servers+for+AI+agents;Websites+that+convert%2C+SaaS+that+scale" alt="Typing SVG" />
 </a>
 
 <p>
-  <a href="https://danbenba.dev"><img src="https://img.shields.io/badge/danbenba.dev-0d1117?style=for-the-badge&logo=googlechrome&logoColor=FF7A3D" alt="Site" /></a>
-  <a href="mailto:contact@danbenba.dev"><img src="https://img.shields.io/badge/contact-0d1117?style=for-the-badge&logo=maildotru&logoColor=FF7A3D" alt="Email" /></a>
-  <a href="https://x.com/danbenba"><img src="https://img.shields.io/badge/@danbenba-0d1117?style=for-the-badge&logo=x&logoColor=FF7A3D" alt="X" /></a>
-  <a href="https://instagram.com/danbenba"><img src="https://img.shields.io/badge/instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=FF7A3D" alt="Instagram" /></a>
-  <a href="https://discord.com/users/963096349937651772"><img src="https://img.shields.io/badge/discord-0d1117?style=for-the-badge&logo=discord&logoColor=FF7A3D" alt="Discord" /></a>
+  <a href="https://danbenba.dev"><img src="https://img.shields.io/badge/danbenba.dev-0d1117?style=for-the-badge&logo=googlechrome&logoColor=4C8DFF" alt="Website" /></a>
+  <a href="mailto:contact@danbenba.dev"><img src="https://img.shields.io/badge/contact-0d1117?style=for-the-badge&logo=maildotru&logoColor=4C8DFF" alt="Email" /></a>
+  <a href="https://x.com/danbenba"><img src="https://img.shields.io/badge/@danbenba-0d1117?style=for-the-badge&logo=x&logoColor=4C8DFF" alt="X" /></a>
+  <a href="https://instagram.com/danbenba"><img src="https://img.shields.io/badge/instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=4C8DFF" alt="Instagram" /></a>
+  <a href="https://discord.com/users/963096349937651772"><img src="https://img.shields.io/badge/discord-0d1117?style=for-the-badge&logo=discord&logoColor=4C8DFF" alt="Discord" /></a>
 </p>
 
-<table>
+<table align="center">
   <tr>
-    <td valign="top"><img src="assets/ascii.svg" width="400" alt="Portrait ASCII de Dany" /></td>
+    <td valign="top"><img src="assets/ascii.svg" width="400" alt="ASCII portrait of Dany" /></td>
     <td valign="top"><img src="assets/info-card.svg" width="470" alt="neofetch danbenba" /></td>
   </tr>
 </table>
 
-</div>
+<img src="assets/divider.svg" width="100%" />
 
-## <img src="assets/icons/user.svg" width="26" align="top" /> À propos
+<h2><img src="assets/icons/user.svg" width="28" align="top" /> About me</h2>
 
-Développeur **fullstack** autodidacte, je code depuis 2021 et je suis **freelance** depuis 2026.
-J'aide les entreprises à avoir un site qui **convertit**, les startups à faire **grandir leur produit**, et les indépendants à **lancer leur plateforme**, de l'idée jusqu'à la mise en prod.
+<p>
+  Self-taught <b>fullstack</b> developer, coding since 2021 and <b>freelancing</b> since 2026.<br>
+  I help businesses get a website that <b>converts</b>, startups <b>grow their product</b><br>
+  and independents <b>launch their platform</b>, from the first idea all the way to production.
+</p>
 
-<table>
+<table align="center">
   <tr>
-    <td align="center" width="25%"><img src="assets/icons/tick-square.svg" width="28" /><br><b>40+</b><br>projets livrés</td>
-    <td align="center" width="25%"><img src="assets/icons/people.svg" width="28" /><br><b>45+</b><br>clients satisfaits</td>
-    <td align="center" width="25%"><img src="assets/icons/time-circle.svg" width="28" /><br><b>5+ ans</b><br>d'expérience</td>
-    <td align="center" width="25%"><img src="assets/icons/star.svg" width="28" /><br><b>99</b><br>repos publics</td>
+    <td align="center" width="150"><img src="assets/icons/tick-square.svg" width="32" /><br><b>40+</b><br>projects shipped</td>
+    <td align="center" width="150"><img src="assets/icons/people.svg" width="32" /><br><b>45+</b><br>happy clients</td>
+    <td align="center" width="150"><img src="assets/icons/time-circle.svg" width="32" /><br><b>5+ years</b><br>of experience</td>
+    <td align="center" width="150"><img src="assets/icons/star.svg" width="32" /><br><b>99</b><br>public repos</td>
   </tr>
 </table>
 
-En ce moment je bosse beaucoup sur l'**IA agentique** : des serveurs **MCP** qui laissent Claude, ChatGPT ou n'importe quel agent piloter de vrais outils, et un workflow où Claude Code et Codex travaillent ensemble.
+<p>
+  These days I'm deep into <b>agentic AI</b>: <b>MCP</b> servers that let Claude, ChatGPT<br>
+  or any agent drive real tools, with Claude Code and Codex working side by side.
+</p>
 
-## <img src="assets/icons/work.svg" width="26" align="top" /> Parcours
+<img src="assets/divider.svg" width="100%" />
 
-| | Année | Étape |
-|:-:|:-:|---|
-| <img src="assets/icons/home.svg" width="20" /> | **2026** | **Freelance** — [danbenba.dev](https://danbenba.dev) · web design, SaaS, fullstack, UI/UX |
-| <img src="assets/icons/setting.svg" width="20" /> | **2025** | **Développeur fullstack** — architecture & déploiement (Docker, Dokploy, CI) |
-| <img src="assets/icons/edit.svg" width="20" /> | **2023** | **Développeur junior** — React et premiers projets clients |
-| <img src="assets/icons/bookmark.svg" width="20" /> | **2021** | **Apprenti développeur** — bases du web, outils Windows en C# |
+<h2><img src="assets/icons/work.svg" width="28" align="top" /> Journey</h2>
 
-**Ma méthode :** Échange → Conception → Dev → Livraison.
-
-## <img src="assets/icons/discovery.svg" width="26" align="top" /> Projets à la une
-
-<table>
+<table align="center">
   <tr>
-    <td width="50%" valign="top">
-      <img src="assets/icons/send.svg" width="20" align="top" /> <a href="https://github.com/danbenba/dokploy-mcp"><b>Dokploy MCP</b></a><br>
-      Serveur MCP open source pour <b>Dokploy</b> : Claude, ChatGPT ou n'importe quel client MCP pilote ton panel self-hosted. Connecteur hébergé sur <a href="https://dokploy.rest">dokploy.rest</a>, package npm <code>dokploy-rest</code>.<br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=FF7A3D" /> <img src="https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=anthropic&logoColor=FF7A3D" />
+    <td align="center" width="200"><img src="assets/icons/bookmark.svg" width="30" /><br><b>2021</b><br>Apprentice developer<br><br>Web fundamentals<br>Windows tools in C#</td>
+    <td align="center" width="200"><img src="assets/icons/edit.svg" width="30" /><br><b>2023</b><br>Junior developer<br><br>React<br>first client projects</td>
+    <td align="center" width="200"><img src="assets/icons/setting.svg" width="30" /><br><b>2025</b><br>Fullstack developer<br><br>Architecture<br>Docker, Dokploy, CI</td>
+    <td align="center" width="200"><img src="assets/icons/home.svg" width="30" /><br><b>2026</b><br>Freelance<br><br><a href="https://danbenba.dev">danbenba.dev</a><br>web, SaaS, UI/UX</td>
+  </tr>
+</table>
+
+<p><b>How I work</b> &nbsp;·&nbsp; Talk → Design → Build → Ship</p>
+
+<img src="assets/divider.svg" width="100%" />
+
+<h2><img src="assets/icons/discovery.svg" width="28" align="top" /> Featured projects</h2>
+
+<table align="center">
+  <tr>
+    <td align="center" width="420" valign="top">
+      <img src="assets/icons/send.svg" width="34" /><br>
+      <a href="https://github.com/danbenba/dokploy-mcp"><b>Dokploy MCP</b></a><br><br>
+      Open-source MCP server for <b>Dokploy</b>:<br>let Claude, ChatGPT or any MCP client<br>run your self-hosted panel. Hosted at <a href="https://dokploy.rest">dokploy.rest</a><br><br>
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=anthropic&logoColor=4C8DFF" />
     </td>
-    <td width="50%" valign="top">
-      <img src="assets/icons/paper.svg" width="20" align="top" /> <a href="https://github.com/danbenba/FramerExport"><b>FramerExport</b></a> <img src="https://img.shields.io/github/stars/danbenba/FramerExport?style=flat-square&color=FF7A3D&labelColor=0d1117&label=%E2%98%85" /><br>
-      Exporte ton site <b>Framer</b> en HTML natif, prêt à héberger où tu veux. Mon repo le plus étoilé.<br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=FF7A3D" /> <img src="https://img.shields.io/badge/Framer-0d1117?style=flat-square&logo=framer&logoColor=FF7A3D" />
+    <td align="center" width="420" valign="top">
+      <img src="assets/icons/paper.svg" width="34" /><br>
+      <a href="https://github.com/danbenba/FramerExport"><b>FramerExport</b></a><br><br>
+      Export your <b>Framer</b> website to native HTML,<br>ready to host anywhere you like.<br>My most-starred repo.<br><br>
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/github/stars/danbenba/FramerExport?style=flat-square&color=4C8DFF&labelColor=0d1117&label=%E2%98%85" />
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <img src="assets/icons/category.svg" width="20" align="top" /> <a href="https://github.com/danbenba/skillforge"><b>SkillForge</b></a><br>
-      Un <b>package manager pour les Agent Skills</b> de Claude. Connecteur distant sur claude.ai, serveur MCP local et CLI pour Claude Code.<br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=FF7A3D" /> <img src="https://img.shields.io/badge/Claude-0d1117?style=flat-square&logo=claude&logoColor=FF7A3D" />
+    <td align="center" width="420" valign="top">
+      <img src="assets/icons/category.svg" width="34" /><br>
+      <a href="https://github.com/danbenba/skillforge"><b>SkillForge</b></a><br><br>
+      A <b>package manager for Claude Agent Skills</b>.<br>Remote connector on claude.ai, local MCP server<br>and CLI for Claude Code.<br><br>
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Claude-0d1117?style=flat-square&logo=claude&logoColor=4C8DFF" />
     </td>
-    <td width="50%" valign="top">
-      <img src="assets/icons/wallet.svg" width="20" align="top" /> <a href="https://fakturapp.cc"><b>Faktur</b></a><br>
-      Plateforme de <b>facturation</b> complète : dashboard, API, docs, plateforme développeur, app desktop et mobile. <a href="https://github.com/fakturapp">@fakturapp</a><br><br>
-      <img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=FF7A3D" /> <img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=FF7A3D" />
+    <td align="center" width="420" valign="top">
+      <img src="assets/icons/wallet.svg" width="34" /><br>
+      <a href="https://fakturapp.cc"><b>Faktur</b></a><br><br>
+      A complete <b>invoicing</b> platform:<br>dashboard, API, docs, developer platform,<br>desktop and mobile apps. <a href="https://github.com/fakturapp">@fakturapp</a><br><br>
+      <img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=4C8DFF" />
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <img src="assets/icons/document.svg" width="20" align="top" /> <a href="https://github.com/danbenba/GPTExporter"><b>GPT Exporter</b></a><br>
-      Extension Chrome qui exporte tes conversations <b>ChatGPT, Claude, Grok, Gemini et Perplexity</b> en Markdown, HTML, JSON, TXT ou PDF, avec une UI native à chaque site.<br><br>
-      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=FF7A3D" /> <img src="https://img.shields.io/badge/Chrome_MV3-0d1117?style=flat-square&logo=googlechrome&logoColor=FF7A3D" />
+    <td align="center" width="420" valign="top">
+      <img src="assets/icons/document.svg" width="34" /><br>
+      <a href="https://github.com/danbenba/GPTExporter"><b>GPT Exporter</b></a><br><br>
+      Chrome extension that exports your chats from<br><b>ChatGPT, Claude, Grok, Gemini, Perplexity</b><br>to Markdown, HTML, JSON, TXT or PDF.<br><br>
+      <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Chrome_MV3-0d1117?style=flat-square&logo=googlechrome&logoColor=4C8DFF" />
     </td>
-    <td width="50%" valign="top">
-      <img src="assets/icons/shield-done.svg" width="20" align="top" /> <a href="https://github.com/danbenba/OmniTools"><b>OmniTools</b></a><br>
-      Mes débuts : une suite d'<b>utilitaires Windows</b> (debloater, tweaks, drivers, installeur Office…) pour lancer facilement plein de scripts.<br><br>
-      <img src="https://img.shields.io/badge/C%23-0d1117?style=flat-square&logo=dotnet&logoColor=FF7A3D" /> <img src="https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=FF7A3D" />
+    <td align="center" width="420" valign="top">
+      <img src="assets/icons/shield-done.svg" width="34" /><br>
+      <a href="https://github.com/danbenba/OmniTools"><b>OmniTools</b></a><br><br>
+      Where it all started: a suite of <b>Windows utilities</b><br>(debloater, tweaks, drivers, Office installer…)<br>to run all kinds of scripts in one click.<br><br>
+      <img src="https://img.shields.io/badge/C%23-0d1117?style=flat-square&logo=dotnet&logoColor=4C8DFF" /> <img src="https://img.shields.io/badge/Windows-0d1117?style=flat-square&logo=windows&logoColor=4C8DFF" />
     </td>
   </tr>
 </table>
 
-## <img src="assets/icons/category.svg" width="26" align="top" /> Stack
+<img src="assets/divider.svg" width="100%" />
+
+<h2><img src="assets/icons/category.svg" width="28" align="top" /> Tech stack</h2>
+
+<p><b>Frontend</b></p>
+<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro,vite,tailwind,html,css&perline=9" />
+<br><br>
+
+<p><b>Backend & infra</b></p>
+<img src="https://skillicons.dev/icons?i=nodejs,prisma,postgres,docker,cloudflare,vercel,linux,git,github&perline=9" />
+<br><br>
+
+<p><b>Design & tools</b></p>
+<img src="https://skillicons.dev/icons?i=figma,notion,vscode,apple,python,cs,java&perline=9" />
+<br><br>
+
+<img src="assets/divider.svg" width="100%" />
+
+<h2><img src="assets/icons/activity.svg" width="28" align="top" /> Activity</h2>
+
+<img src="assets/heatmap.svg" width="100%" alt="Contributions over the last year" />
+
+<p><sub>ASCII portrait, neofetch card and heatmap are animated SVGs generated by <code>scripts/generate.py</code> and refreshed daily by a GitHub Action.</sub></p>
+
+<img src="assets/divider.svg" width="100%" />
+
+<h2><img src="assets/icons/message.svg" width="28" align="top" /> Let's work together</h2>
 
 <p>
-  <b>Front</b><br>
-  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro,vite,tailwind,html,css&perline=9" />
-</p>
-<p>
-  <b>Back & infra</b><br>
-  <img src="https://skillicons.dev/icons?i=nodejs,prisma,postgres,docker,cloudflare,vercel,linux,git,github&perline=9" />
-</p>
-<p>
-  <b>Design & outils</b><br>
-  <img src="https://skillicons.dev/icons?i=figma,notion,vscode,apple,python,cs,java&perline=9" />
+  Got a website, a SaaS or a platform to launch?<br>
+  Drop me a line at <a href="mailto:contact@danbenba.dev"><b>contact@danbenba.dev</b></a> or visit <a href="https://danbenba.dev"><b>danbenba.dev</b></a>
 </p>
 
-## <img src="assets/icons/activity.svg" width="26" align="top" /> Activité
+<a href="https://www.buymeacoffee.com/danbenba"><img src="https://img.shields.io/badge/Buy_me_a_coffee-0d1117?style=for-the-badge&logo=buymeacoffee&logoColor=4C8DFF" alt="Buy me a coffee" /></a>
 
-<img src="assets/heatmap.svg" width="100%" alt="Contributions de la dernière année" />
+<br>
 
-<sub>Portrait ASCII, carte neofetch et heatmap sont des SVG animés générés par <code>scripts/generate.py</code> et rafraîchis chaque jour par une GitHub Action.</sub>
+<sub><img src="assets/icons/heart.svg" width="14" align="top" /> Always learning, always building.</sub>
 
-## <img src="assets/icons/message.svg" width="26" align="top" /> Travaillons ensemble
-
-Un site, un SaaS ou une plateforme à lancer ? Écris-moi à **[contact@danbenba.dev](mailto:contact@danbenba.dev)** ou passe sur **[danbenba.dev](https://danbenba.dev)**.
-
-<a href="https://www.buymeacoffee.com/danbenba"><img src="https://img.shields.io/badge/Buy_me_a_coffee-0d1117?style=for-the-badge&logo=buymeacoffee&logoColor=FF7A3D" alt="Buy me a coffee" /></a>
-
-<div align="center">
-  <sub><img src="assets/icons/heart.svg" width="14" align="top" /> Toujours apprendre, toujours innover.</sub>
 </div>

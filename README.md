@@ -27,11 +27,18 @@
 
 <h2><img src="assets/icons/user.svg" width="28" align="top" /> About me</h2>
 
-<p>
-  Self-taught <b>fullstack</b> developer, coding since 2021 and <b>freelancing</b> since 2026.<br>
-  I help businesses get a website that <b>converts</b>, startups <b>grow their product</b><br>
-  and independents <b>launch their platform</b>, from the first idea all the way to production.
-</p>
+</div>
+
+> [!NOTE]
+> **Who I am** · Self-taught **fullstack** developer from France, coding since 2021 and **freelancing** since 2026.
+
+> [!TIP]
+> **What I can do for you** · A website that **converts** for your business, a product that **grows** for your startup, or a platform you can **launch** as an independent, from the first idea all the way to production.
+
+> [!IMPORTANT]
+> **Right now** · Deep into **agentic AI**: building **MCP** servers that let Claude, ChatGPT or any agent drive real tools, with Claude Code and Codex working side by side.
+
+<div align="center">
 
 <table align="center">
   <tr>
@@ -41,11 +48,6 @@
     <td align="center" width="150"><img src="assets/icons/star.svg" width="32" /><br><b>99</b><br>public repos</td>
   </tr>
 </table>
-
-<p>
-  These days I'm deep into <b>agentic AI</b>: <b>MCP</b> servers that let Claude, ChatGPT<br>
-  or any agent drive real tools, with Claude Code and Codex working side by side.
-</p>
 
 <img src="assets/divider.svg" width="100%" />
 

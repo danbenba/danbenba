@@ -19,11 +19,11 @@ BORDER = "#30363d"
 TEXT = "#c9d1d9"
 MUTED = "#8b949e"
 ACCENT = "#4C8DFF"
-RAMP = " .`:-=+*cs#%@"
+DENSE = " .:-=+*o#%@"
 HEAT = ["#161b22", "#0c2d6b", "#1a4fa8", "#2f6fe0", "#4c8dff", "#a5c8ff"]
 
-COLS, ROWS = 76, 40
-CHAR_W, CHAR_H = 4.75, 8.4
+COLS, ROWS = 96, 50
+CHAR_W, CHAR_H = 3.75, 6.72
 CARD_W, CARD_H = 470, 370
 
 
@@ -38,30 +38,25 @@ def frame(w, h, title):
 
 def ascii_portrait():
     raw = Image.open(io.BytesIO(requests.get(AVATAR, timeout=30).content)).convert("RGBA")
-    white = Image.new("RGBA", raw.size, (255, 255, 255, 255))
-    white.alpha_composite(raw)
-    gray = np.array(white.convert("L"))
-    gray = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8)).apply(gray)
-    small = cv2.resize(gray, (COLS, ROWS), interpolation=cv2.INTER_AREA)
     rgba = np.array(raw).astype(np.float32)
     premul = rgba[..., :3] * (rgba[..., 3:] / 255)
     color = cv2.resize(premul, (COLS, ROWS), interpolation=cv2.INTER_AREA)
     alpha = cv2.resize(rgba[..., 3], (COLS, ROWS), interpolation=cv2.INTER_AREA)
+    true_rgb = color / np.maximum(alpha[..., None] / 255, 1e-3)
+    lum = np.clip(true_rgb @ np.array([0.299, 0.587, 0.114]), 0, 255)
+    lum = cv2.equalizeHist(lum.astype(np.uint8)).astype(float) * 0.6 + lum * 0.4
 
     def tint(x, y):
         rgb = color[y, x] / max(alpha[y, x] / 255, 1e-3)
         px = np.clip(rgb, 0, 255).astype(np.uint8).reshape(1, 1, 3)
         hh, ss, vv = cv2.cvtColor(px, cv2.COLOR_RGB2HSV)[0, 0].astype(float)
         if ss < 130 and vv < 120:
-            hh, ss = 110, 45
-        else:
-            ss = min(255, ss * 1.15)
-        vv = 120 + vv / 255 * 135
+            ss = 0
+        vv = 72 + vv / 255 * 183
         out = cv2.cvtColor(np.array([[[hh, ss, vv]]], dtype=np.uint8), cv2.COLOR_HSV2RGB)[0, 0]
-        q = (out // 12 * 12).astype(int)
+        q = (out // 8 * 8).astype(int)
         return "#%02x%02x%02x" % tuple(q)
 
-    floor = RAMP.index("+")
     w = int(COLS * CHAR_W + 40)
     h = int(ROWS * CHAR_H + 60)
     body = []
@@ -71,7 +66,7 @@ def ascii_portrait():
             if alpha[y, x] < 40:
                 ch, fill = " ", None
             else:
-                ch = RAMP[max(floor, min(len(RAMP) - 1, int((255 - small[y, x]) / 256 * len(RAMP))))]
+                ch = DENSE[max(1, min(len(DENSE) - 1, int(lum[y, x] / 256 * len(DENSE))))]
                 fill = tint(x, y)
             if runs and (runs[-1][1] == fill or ch == " "):
                 runs[-1][0] += ch
@@ -94,7 +89,7 @@ def ascii_portrait():
     svg = (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
         f'<g font-family="{FONT}">{frame(w, h, "dany@danbenba: ~/portrait")}</g>'
-        f'<g font-family="{FONT}" font-size="7.9" font-weight="700">{"".join(body)}</g></svg>'
+        f'<g font-family="{FONT}" font-size="6.25" font-weight="700">{"".join(body)}</g></svg>'
     )
     (OUT / "ascii.svg").write_text(svg)
 

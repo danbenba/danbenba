@@ -52,8 +52,11 @@ def ascii_portrait():
         rgb = color[y, x] / max(alpha[y, x] / 255, 1e-3)
         px = np.clip(rgb, 0, 255).astype(np.uint8).reshape(1, 1, 3)
         hh, ss, vv = cv2.cvtColor(px, cv2.COLOR_RGB2HSV)[0, 0].astype(float)
+        if ss < 130 and vv < 120:
+            hh, ss = 110, 45
+        else:
+            ss = min(255, ss * 1.15)
         vv = 120 + vv / 255 * 135
-        ss = min(255, ss * 1.15)
         out = cv2.cvtColor(np.array([[[hh, ss, vv]]], dtype=np.uint8), cv2.COLOR_HSV2RGB)[0, 0]
         q = (out // 12 * 12).astype(int)
         return "#%02x%02x%02x" % tuple(q)

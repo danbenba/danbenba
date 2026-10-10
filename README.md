@@ -27,32 +27,8 @@
 
 <h2><img src="assets/icons/user.svg" width="28" align="top" /> About me</h2>
 
-</div>
-
-> [!NOTE]
-> **Who I am** · Self-taught **fullstack** developer from France, coding since 2021 and **freelancing** since 2026.
-
-> [!TIP]
-> **What I can do for you** · A website that **converts** for your business, a product that **grows** for your startup, or a platform you can **launch** as an independent, from the first idea all the way to production.
-
-> [!IMPORTANT]
-> **Right now** · Deep into **agentic AI**: building **MCP** servers that let Claude, ChatGPT or any agent drive real tools, with Claude Code and Codex working side by side.
-
-<div align="center">
-
-<table align="center">
-  <tr>
-    <td align="center" width="150"><img src="assets/icons/tick-square.svg" width="32" /><br><b>40+</b><br>projects shipped</td>
-    <td align="center" width="150"><img src="assets/icons/people.svg" width="32" /><br><b>45+</b><br>happy clients</td>
-    <td align="center" width="150"><img src="assets/icons/time-circle.svg" width="32" /><br><b>5+ years</b><br>of experience</td>
-    <td align="center" width="150"><img src="assets/icons/star.svg" width="32" /><br><b>99</b><br>public repos</td>
-  </tr>
-</table>
-
-<h3><img src="assets/icons/chart.svg" width="24" align="top" /> Stats</h3>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=danbenba&show_icons=true&hide_border=true&bg_color=0d1117&title_color=4C8DFF&icon_color=4C8DFF&text_color=c9d1d9&ring_color=4C8DFF&count_private=true&include_all_commits=true&rank_icon=github&card_width=440" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=danbenba&layout=compact&hide_border=true&bg_color=0d1117&title_color=4C8DFF&text_color=c9d1d9&langs_count=8&card_width=380&exclude_repo=PassGen,UnderGame" alt="Top languages" />
+<img src="assets/stats.svg" height="190" alt="GitHub stats" />
+<img src="assets/langs.svg" height="190" alt="Top languages" />
 
 <img src="https://streak-stats.demolab.com?user=danbenba&hide_border=true&background=0d1117&ring=4C8DFF&fire=4C8DFF&currStreakLabel=4C8DFF&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff&stroke=30363d&card_width=820" alt="GitHub streak" />
 

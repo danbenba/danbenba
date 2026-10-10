@@ -1,4 +1,5 @@
 import io
+import os
 import re
 from datetime import date
 from html import escape
@@ -20,6 +21,14 @@ TEXT = "#c9d1d9"
 MUTED = "#8b949e"
 ACCENT = "#4C8DFF"
 DENSE = " .:-=+*o#%@"
+EXCLUDED_LANG_REPOS = {"PassGen", "UnderGame"}
+LANG_COLORS = {
+    "TypeScript": "#3178c6", "JavaScript": "#f1e05a", "C#": "#178600", "Java": "#b07219",
+    "CSS": "#663399", "HTML": "#e34c26", "Python": "#3572A5", "Batchfile": "#C1F12E",
+    "Shell": "#89e051", "Visual Basic .NET": "#945db7", "Rust": "#dea584", "C": "#555555",
+    "C++": "#f34b7d", "Astro": "#ff5a03", "PHP": "#4F5D95", "Kotlin": "#A97BFF", "Go": "#00ADD8",
+    "Dockerfile": "#384d54", "MDX": "#fcb32c", "Vue": "#41b883", "Svelte": "#ff3e00",
+}
 HEAT = ["#161b22", "#0c2d6b", "#1a4fa8", "#2f6fe0", "#4c8dff", "#a5c8ff"]
 
 COLS, ROWS = 96, 50
@@ -174,17 +183,124 @@ def heatmap(days, total):
     (OUT / "heatmap.svg").write_text(svg)
 
 
-def github_stats():
+def api():
     s = requests.Session()
     s.headers["Accept"] = "application/vnd.github+json"
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        s.headers["Authorization"] = f"Bearer {token}"
+    return s
+
+
+def github_stats():
+    s = api()
     user = s.get(f"https://api.github.com/users/{USER}", timeout=30).json()
     repos = s.get(f"https://api.github.com/users/{USER}/repos?per_page=100", timeout=30).json()
-    stars = sum(r.get("stargazers_count", 0) for r in repos if isinstance(r, dict) and not r.get("fork"))
-    return user, stars
+    own = [r for r in repos if isinstance(r, dict) and not r.get("fork")]
+    stars = sum(r.get("stargazers_count", 0) for r in own)
+
+    def search(q):
+        r = s.get("https://api.github.com/search/issues", params={"q": q, "per_page": 1}, timeout=30).json()
+        return r.get("total_count", 0)
+
+    prs = search(f"author:{USER} type:pr")
+    merged = search(f"author:{USER} type:pr is:merged")
+    issues = search(f"author:{USER} type:issue")
+    langs = {}
+    for r in own:
+        if r["name"] in EXCLUDED_LANG_REPOS:
+            continue
+        data = s.get(r["languages_url"], timeout=30).json()
+        if isinstance(data, dict):
+            for k, v in data.items():
+                if isinstance(v, int):
+                    langs[k] = langs.get(k, 0) + v
+    return {"user": user, "stars": stars, "prs": prs, "merged": merged, "issues": issues, "langs": langs}
 
 
-def info_card(stats, counts, total):
-    user, stars = stats
+def icon(name, x, y, size):
+    raw = (Path(__file__).resolve().parent.parent / "assets" / "icons" / f"{name}.svg").read_text()
+    inner = raw[raw.index(">") + 1:raw.rindex("</svg>")]
+    return f'<svg x="{x}" y="{y}" width="{size}" height="{size}" viewBox="0 0 24 24">{inner}</svg>'
+
+
+def stats_card(st, total):
+    w, h = 440, 190
+    contribs = total.split(" ")[0] if total else "—"
+    rows = [
+        ("star", "Stars earned", f'{st["stars"]:,}'),
+        ("activity", "Contributions (1y)", contribs),
+        ("send", "Pull requests", f'{st["prs"]:,} · {st["merged"]:,} merged'),
+        ("chat", "Issues opened", f'{st["issues"]:,}'),
+        ("folder", "Public repos", f'{st["user"].get("public_repos", 0):,}'),
+        ("people", "Followers", f'{st["user"].get("followers", 0):,}'),
+    ]
+    out = []
+    for i, (ic, label, value) in enumerate(rows):
+        y = 50 + i * 22
+        delay = 0.3 + i * 0.12
+        out.append(
+            f'<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.35s" fill="freeze"/>'
+            f'<animateTransform attributeName="transform" type="translate" from="-10 0" to="0 0" begin="{delay:.2f}s" dur="0.35s" fill="freeze"/>'
+            f'{icon(ic, 22, y - 13, 16)}'
+            f'<text x="46" y="{y}" font-size="12.5" fill="{TEXT}">{escape(label)}</text>'
+            f'<text x="290" y="{y}" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="end">{escape(value)}</text></g>'
+        )
+    cx, cy, r = 365, 100, 46
+    circ = 2 * 3.14159 * r
+    ring = (
+        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{BORDER}" stroke-width="7"/>'
+        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{ACCENT}" stroke-width="7" stroke-linecap="round" '
+        f'stroke-dasharray="{circ:.1f}" stroke-dashoffset="{circ:.1f}" transform="rotate(-90 {cx} {cy})">'
+        f'<animate attributeName="stroke-dashoffset" from="{circ:.1f}" to="{circ * 0.08:.1f}" begin="0.4s" dur="1.4s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>'
+        f'<text x="{cx}" y="{cy + 2}" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">{escape(contribs)}</text>'
+        f'<text x="{cx}" y="{cy + 18}" font-size="9" fill="{MUTED}" text-anchor="middle">this year</text>'
+    )
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
+        f'<g font-family="{FONT}">{frame(w, h, "gh stats --user danbenba")}{"".join(out)}{ring}</g></svg>'
+    )
+    (OUT / "stats.svg").write_text(svg)
+
+
+def langs_card(st):
+    w, h = 380, 190
+    langs = sorted(st["langs"].items(), key=lambda kv: -kv[1])[:8]
+    tot = sum(v for _, v in langs) or 1
+    bar, x = [], 22.0
+    span = w - 44
+    for i, (name, v) in enumerate(langs):
+        bw = span * v / tot
+        delay = 0.3 + i * 0.1
+        bar.append(
+            f'<rect x="{x:.1f}" y="44" height="8" width="0" fill="{LANG_COLORS.get(name, "#8b949e")}">'
+            f'<animate attributeName="width" from="0" to="{bw:.1f}" begin="{delay:.2f}s" dur="0.5s" fill="freeze"/></rect>'
+        )
+        x += bw
+    legend = []
+    for i, (name, v) in enumerate(langs):
+        col, row = divmod(i, 4)
+        lx = 22 + col * 175
+        ly = 82 + row * 24
+        delay = 0.5 + i * 0.1
+        legend.append(
+            f'<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="{delay:.2f}s" dur="0.35s" fill="freeze"/>'
+            f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{LANG_COLORS.get(name, "#8b949e")}"/>'
+            f'<text x="{lx + 16}" y="{ly}" font-size="12" fill="{TEXT}">{escape(name)}</text>'
+            f'<text x="{lx + 160}" y="{ly}" font-size="12" fill="{MUTED}" text-anchor="end">{v / tot * 100:.1f}%</text></g>'
+        )
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
+        f'<defs><clipPath id="bar"><rect x="22" y="44" width="{span}" height="8" rx="4"/></clipPath></defs>'
+        f'<g font-family="{FONT}">{frame(w, h, "top languages")}'
+        f'<rect x="22" y="44" width="{span}" height="8" rx="4" fill="{BORDER}"/>'
+        f'<g clip-path="url(#bar)">{"".join(bar)}</g>{"".join(legend)}</g></svg>'
+    )
+    (OUT / "langs.svg").write_text(svg)
+
+
+def info_card(st, counts, total):
+    user, stars = st["user"], st["stars"]
     current, best = streaks(counts) if counts else (0, 0)
     age_years = date.today().year - 2021
     rows = [
@@ -253,7 +369,10 @@ def main():
     ascii_portrait()
     days, counts, total = contributions()
     heatmap(days, total)
-    info_card(github_stats(), counts, total)
+    st = github_stats()
+    info_card(st, counts, total)
+    stats_card(st, total)
+    langs_card(st)
 
 
 if __name__ == "__main__":

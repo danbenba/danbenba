@@ -1,7 +1,5 @@
 <div align="center">
-
-<img src="https://danbenba.dev/profile.png" width="140" alt="Dany" />
-
+  
 <h1>Hey, I'm Dany <img src="assets/wave.png" width="38" alt="👋" /></h1>
 
 <a href="https://danbenba.dev">

@@ -131,6 +131,4 @@
 
 <br>
 
-<sub><img src="assets/icons/heart.svg" width="14" align="top" /> Always learning, always building.</sub>
-
 </div>

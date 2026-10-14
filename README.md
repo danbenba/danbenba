@@ -1,5 +1,7 @@
 <div align="center">
-  
+
+<img src="https://danbenba.dev/profile.png" width="140" alt="Dany" />
+
 <h1>Hey, I'm Dany <img src="assets/wave.png" width="38" alt="👋" /></h1>
 
 <a href="https://danbenba.dev">
@@ -130,5 +132,7 @@
 <a href="https://www.buymeacoffee.com/danbenba"><img src="https://img.shields.io/badge/Buy_me_a_coffee-0d1117?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Buy me a coffee" /></a>
 
 <br>
+
+<sub><img src="assets/icons/heart.svg" width="14" align="top" /> Always learning, always building.</sub>
 
 </div>
